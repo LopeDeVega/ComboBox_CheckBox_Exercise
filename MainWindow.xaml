@@ -1,0 +1,70 @@
+﻿<Window x:Class="_27._1.ListBox.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_27._1.ListBox.WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="*"></RowDefinition>
+
+            <RowDefinition Height="150" ></RowDefinition>
+
+        </Grid.RowDefinitions>
+
+        
+        <ListBox Name="ListB" HorizontalContentAlignment="Stretch" MouseDoubleClick="ListB_MouseDoubleClick">
+
+
+            <ListBox.ItemTemplate>
+                
+                <!--Inside of this Listbox DataTemplate -->
+
+                <DataTemplate>
+                    <!--Creating a grid to be divided in four columns-->
+                    <Grid Margin="2">
+                        
+                        <!--Grid of the ListBox devided in 5 columns (City_1 (2) /Temperature_1 (2) / Progress Bar)-->
+                        <Grid.ColumnDefinitions>
+
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+
+
+                        </Grid.ColumnDefinitions>
+                            
+                        <!--TextBlocks to set the information of the Cities Class--> 
+                        <TextBlock Grid.Column="0" Text="{Binding City_1 }" ></TextBlock>
+                        <TextBlock Grid.Column="1" Text="{Binding Temperature_1}"></TextBlock>
+                        <TextBlock Grid.Column="2" Text="{Binding City_2}"></TextBlock>
+                        <TextBlock Grid.Column="3" Text="{Binding Temperature_2}"></TextBlock>
+                           
+                        <!--Progress Bars configuraion-->
+                        <ProgressBar Grid.Column="4" Name="progressBar1" HorizontalContentAlignment="Stretch" Minimum="0" Maximum="50" Value="{Binding temperature}" ></ProgressBar>
+
+                        
+                    </Grid>
+                    
+                </DataTemplate>
+                
+                
+                
+            </ListBox.ItemTemplate>
+            
+        </ListBox>
+
+        <Button Grid.Row="1" Content="Click on Me" Click="Button_Click"></Button>
+
+
+
+    </Grid>
+
+   
+</Window>

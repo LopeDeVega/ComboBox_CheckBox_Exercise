@@ -1,0 +1,15 @@
+C:\Users\senti\source\repos\Course C#\27.1.ListBox.WPF\bin\Debug\27.1.ListBox.WPF.exe.config
+C:\Users\senti\source\repos\Course C#\27.1.ListBox.WPF\bin\Debug\27.1.ListBox.WPF.exe
+C:\Users\senti\source\repos\Course C#\27.1.ListBox.WPF\bin\Debug\27.1.ListBox.WPF.pdb
+C:\Users\senti\source\repos\Course C#\27.1.ListBox.WPF\obj\Debug\27.1.ListBox.WPF.csprojAssemblyReference.cache
+C:\Users\senti\source\repos\Course C#\27.1.ListBox.WPF\obj\Debug\MainWindow.g.cs
+C:\Users\senti\source\repos\Course C#\27.1.ListBox.WPF\obj\Debug\App.g.cs
+C:\Users\senti\source\repos\Course C#\27.1.ListBox.WPF\obj\Debug\27.1.ListBox.WPF_MarkupCompile.cache
+C:\Users\senti\source\repos\Course C#\27.1.ListBox.WPF\obj\Debug\27.1.ListBox.WPF_MarkupCompile.lref
+C:\Users\senti\source\repos\Course C#\27.1.ListBox.WPF\obj\Debug\MainWindow.baml
+C:\Users\senti\source\repos\Course C#\27.1.ListBox.WPF\obj\Debug\27.1.ListBox.WPF.g.resources
+C:\Users\senti\source\repos\Course C#\27.1.ListBox.WPF\obj\Debug\_27._1.ListBox.WPF.Properties.Resources.resources
+C:\Users\senti\source\repos\Course C#\27.1.ListBox.WPF\obj\Debug\27.1.ListBox.WPF.csproj.GenerateResource.cache
+C:\Users\senti\source\repos\Course C#\27.1.ListBox.WPF\obj\Debug\27.1.ListBox.WPF.csproj.CoreCompileInputs.cache
+C:\Users\senti\source\repos\Course C#\27.1.ListBox.WPF\obj\Debug\27.1.ListBox.WPF.exe
+C:\Users\senti\source\repos\Course C#\27.1.ListBox.WPF\obj\Debug\27.1.ListBox.WPF.pdb
