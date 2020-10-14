@@ -87,6 +87,7 @@ namespace _27._1.ListBox.WPF
         private void ListB_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
                 //if ListB index (1) is not null / return the value
+                //We could also use try and catch used in the button which avoid to break the application when you click and nothing is selected
                 if ( ListB.SelectedIndex == 1)
                 {
                     MessageBox.Show((ListB.SelectedItem as Cities).City_1 + " " +
@@ -95,16 +96,30 @@ namespace _27._1.ListBox.WPF
                     (ListB.SelectedItem as Cities).Temperature_2 + " Degrees ");
 
                 }
-            int diff1 = ((ListB.SelectedItem as Cities).Temperature_1);
-            MessageBox.Show(diff1.ToString());
+                //this message will be displayed when a row is selected and click on any column is not fourth column
+                else
+                {
+                 MessageBox.Show("Please Select an Item on four column and the info will be displayed");
+
+
+                }
+            //int diff1 = ((ListB.SelectedItem as Cities).Temperature_1);
+            //MessageBox.Show(diff1.ToString());
 
         }
 
-  
 
+        private void TextBlock_PreviewMouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (ListB.SelectedItem != null)
+            {
 
-
-
+                MessageBox.Show((ListB.SelectedItem as Cities).City_1 + " " +
+                   (ListB.SelectedItem as Cities).Temperature_1 + " Degrees  " +
+                   (ListB.SelectedItem as Cities).City_2 + " " +
+                   (ListB.SelectedItem as Cities).Temperature_2 + " Degrees ");
+            }
+        }
     }
 
     //Creating a new Class Cities

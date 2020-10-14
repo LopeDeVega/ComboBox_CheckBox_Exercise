@@ -44,7 +44,8 @@
                         <TextBlock Grid.Column="0" Text="{Binding City_1 }" ></TextBlock>
                         <TextBlock Grid.Column="1" Text="{Binding Temperature_1}"></TextBlock>
                         <TextBlock Grid.Column="2" Text="{Binding City_2}"></TextBlock>
-                        <TextBlock Grid.Column="3" Text="{Binding Temperature_2}"></TextBlock>
+                        <!--PreviewMouseDown create a event which make the same that // ListB_MouseDoubleClick // done in Listbox above--> 
+                        <TextBlock Grid.Column="3" PreviewMouseDown="TextBlock_PreviewMouseDown"  Text="{Binding Temperature_2}"></TextBlock>
                            
                         <!--Progress Bars configuraion-->
                         <ProgressBar Grid.Column="4" Name="progressBar1" HorizontalContentAlignment="Stretch" Minimum="0" Maximum="50" Value="{Binding temperature}" ></ProgressBar>
